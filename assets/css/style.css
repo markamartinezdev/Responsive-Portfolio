@@ -1,0 +1,237 @@
+body{
+	background-image: url(../images/seigaiha.png);
+	margin:0;
+	color:#777;
+	font-family:'Helvetica Neue', Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+header{
+	overflow: auto;
+	background-color:white;
+	border: solid 1px #ccc;
+}
+a{
+	text-decoration: none;
+}
+h1{
+	font-size:2em;
+	color:white;
+	padding:20px;
+	background-color:#4aaaa5;
+}
+h1, h2 , h3{
+	font-family:'Gorgia',Times, Times New Roman, serif;
+}
+h2{
+	border-bottom:solid 1px #ddd;
+	color:#4aaaa5;
+	font-size:1.3em;
+}
+h3{
+	font-size:1.3em;
+	color:#4aaaa5;
+	text-align:left;
+	padding:0px 0px 10px 0px;
+}
+.header{
+	margin: 0 auto;
+	max-width:960px;
+}
+.heading{
+	float:left;
+}
+nav{
+
+	padding:25px;
+	float:right;
+}
+nav ul li{
+	display:inline-block;
+	padding:0 15px;
+}
+	.navSpace{
+		box-shadow:1px 0 0 0;
+	}
+nav a{
+	color:#777;
+}
+.content{
+	clear: both;
+	overflow: auto;
+	max-width: 960px;
+	margin: 1em auto;
+}
+section{
+	padding:1em;
+	background-color:white;
+	display:inline-block;
+	width:60%;
+	 border:solid 1px #ddd;
+}
+.title{
+	margin-bottom:20px;
+}
+/********************************************************about**/
+article{
+
+}
+article img{
+	padding:0 10px 0 0;
+	float:left;
+	width:50%;
+}
+article p{
+	margin:10px;
+}
+aside{
+	border: solid 1px #ddd;
+	float:right;
+	display:inline-block;
+	width:30%;
+	background-color:white;
+	padding:30px;
+}
+aside ul{
+	padding: 20px 0px 0px 0px;
+	border-top:solid 1px #ddd;
+}
+aside ul li{
+	display:inline-block;
+}
+aside ul li a img{
+	width:50px;
+}
+/**************************************************** portfolio*/
+.portfolio{
+	margin-top:20px;
+	text-align:center;
+	overflow:auto;
+}
+.item{
+position:relative;
+float:left;
+margin:.3em;
+text-align: center;
+overflow: hidden;
+width:45%;
+}
+.item img{;
+	width:100%;
+}
+.item h3{
+	position: absolute;
+	font-size:2em;
+	color:white;
+	padding:0.3;
+	background-color:#4aaaa5;
+	bottom:12px;
+	width:100%;
+}
+/**************************************************contact page */
+form{
+	margin-top:20px;
+}
+input, textarea{
+    border: solid 1px rgb(241, 239, 239);
+    margin:10px 0 ;
+    padding:10px;
+
+}
+input[type="submit"] {
+	padding:10px 30px;
+	background-color:#4aaaa5;
+	color: white;
+}
+textarea{
+	width:100%;
+	padding:0;
+}
+
+/********************************************************footer*/
+footer{
+	border-top:solid 10px #4aaaa5;
+	clear:both;
+	background-color:#666;
+	
+}
+footer p{
+	padding:20px;
+	text-align:center;
+}
+
+@media screen and (max-width: 980px){
+
+
+}
+@media screen and (max-width: 768px){
+
+	.content{
+		padding:0 0.1em;
+	}
+	section, aside{
+		float:none;
+		margin:10px 0;
+		width:100%;
+	}
+/***********************************Contact****/
+	input, textarea{
+		width:100%;
+	}
+	input[type="submit"]{
+		width:30%;
+	}
+
+
+}
+@media screen and (max-width: 640px){
+
+	header{
+		text-align:center;
+	}
+
+	nav{
+		width:100%;
+	}
+	nav li{
+		width:32%;
+	}
+	.heading, nav, aside{
+		float:none;
+	}
+	section, aside{
+		margin:10px 0;
+		width:100%;
+	}
+
+	/*****************************About*******/
+		
+		article img{
+			float:none;
+			width:100%;
+			padding:0;
+		}
+
+	/***************************portfolio*****/
+	.item{
+		width:100%;
+		margin:10px 0;
+	}
+
+	.item img{
+		margin:0 auto;
+
+	}
+	.item h3{
+		text-align:center;
+	}
+	/****************************Contact******/
+	input, textarea{
+		width:100%;
+	}
+	input[type="submit"]{
+		width:30%;
+	}
+
+}
